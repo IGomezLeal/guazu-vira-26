@@ -1,42 +1,93 @@
 ---
 layout: default
+title: "HPC & Climate Analytics Portfolio"
 ---
 
-<!-- Título y descripción principal -->
-<h1>High-Performance Computing & Climate Data Analytics</h1>
-<p>Postdoctoral Researcher at Cornell University</p>
+<!-- ENCABEZADO ESTILO CAYMAN -->
+<header style="text-align: center; padding: 20px 0; border-bottom: 1px solid #eee;">
+  <h1>High-Performance Computing & Climate Data Analytics Showcase</h1>
+  <p style="font-size: 1.2em; color: #159957;">Technical summary: Multi-terabyte architecture & Computational Physics</p>
+</header>
 
-<hr>
-
-<!-- Estructura de dos columnas: Contenido a la izquierda, Margen a la derecha -->
 <div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
 
-  <!-- COLUMNA PRINCIPAL (Izquierda) -->
-  <div style="flex: 2; min-width: 300px;">
-    <h2>Research & Projects</h2>
-    <p>Especialista en modelado climático utilizando <strong>WACCM</strong> y <strong>CESM</strong>. Mi trabajo se centra en simulaciones de geoingeniería solar y presupuestos energéticos planetarios.</p>
+  <!-- COLUMNA PRINCIPAL (Izquierda - 70%) -->
+  <div style="flex: 2.5; min-width: 350px;">
     
-    <h3>Technical Expertise</h3>
-    <ul>
-      <li>Scientific Programming: Python (xarray, numpy), Fortran, Bash.</li>
-      <li>HPC Clusters: NCAR's Derecho & Casper.</li>
-      <li>Data: NetCDF processing and 3D visualization.</li>
-    </ul>
+    <section>
+      <h3>🔬 Project Overview</h3>
+      <p>This repository serves as a technical showcase of my research at <strong>Cornell University</strong>, focusing on large-scale data architecture and numerical modifications within the <a href="https://www.cesm.ucar.edu/models">Community Earth System Model (CESM GCM)</a> framework.</p>
+      
+      <blockquote style="background: #f9f9f9; border-left: 5px solid #159957; padding: 15px;">
+        <strong>🖥️ HPC Infrastructure:</strong> All simulations and data pipelines were architected and executed on the <a href="https://www.cisl.ucar.edu/capabilities/derecho">NCAR Derecho</a> HPC cluster, utilizing NetCDF4 standards for high-throughput I/O of <strong>60 TB+</strong> datasets.
+      </blockquote>
+    </section>
+
+    <section style="margin-top: 30px;">
+      <h2>🚀 GCM Numerical Implementations</h2>
+      
+      <h4>1. Bolometric Dimming and Climatic Response</h4>
+      <p>Hardcoded parameterization of non-spectral solar constant reductions for baseline climate sensitivity testing. Optimized the low-level <strong>Fortran I/O pipeline</strong> to ingest NetCDF4 parameters directly into the GCM core.</p>
+
+      <h4>2. Filter Analysis and Spectral Dimming</h4>
+      <p>Numerical integration of a space-based (L1) spectral filter into the <strong>WACCM</strong> radiative transfer core. Developed spectral analysis pipelines for wavelength band radiation attenuations under the <strong>SSP2-4.5</strong> scenario.</p>
+
+      <h4>3. 4D Spatio-temporal Matrix Implementation</h4>
+      <p>Architected and embedded <strong>4D numerical matrices</strong> into the model's core to simulate solar forcing variability in time, latitude, longitude, and wavelength over a 30-year timeline [2035, 2065].</p>
+    </section>
+
+    <section style="margin-top: 30px;">
+      <h2>📁 Data Standards: Why NetCDF?</h2>
+      <p>The industry standard for array-oriented scientific data:</p>
+      <ul>
+        <li><strong>Multidimensional:</strong> Storage of variables across 4D space-time coordinates ($x, y, z, t$).</li>
+        <li><strong>Self-Describing:</strong> Metadata ensuring data integrity during high-throughput I/O.</li>
+        <li><strong>Performance:</strong> Optimized for parallel reads/writes on NCAR Derecho.</li>
+      </ul>
+    </section>
+
+    <section style="margin-top: 30px; border-top: 1px solid #eee; padding-top: 20px;">
+      <p style="font-size: 0.85em; color: #666;">
+        <strong>Note:</strong> Full source code and configuration files are hosted in private repositories. Specific code samples (Python/Fortran) are available upon request.
+      </p>
+    </section>
   </div>
 
-  <!-- COLUMNA DE MARGEN (Derecha) -->
-  <div style="flex: 1; min-width: 200px; border-left: 1px solid #e5e5e5; padding-left: 30px;">
-    <h4>Contact & Links</h4>
+  <!-- COLUMNA DE MARGEN (Derecha - 30%) -->
+  <div style="flex: 1; min-width: 250px; border-left: 1px solid #e5e5e5; padding-left: 25px; background-color: #fafafa; border-radius: 8px;">
+    
+    <h4>📊 Research Slides</h4>
     <p style="font-size: 0.9em;">
-      <a href="https://github.com/IGomezLeal">GitHub Profile</a><br>
-      <a href="mailto:tu-email@cornell.edu">Cornell Email</a>
+      <a href="/slides.html" style="background: #159957; color: white; padding: 8px 12px; border-radius: 4px; text-decoration: none; display: inline-block; margin-bottom: 10px;">View Presentation</a>
     </p>
 
-    <h4>Focus Areas</h4>
-    <ul style="font-size: 0.9em; list-style-type: none; padding-left: 0;">
-      <li>• Solar Geoengineering</li>
-      <li>• Radiative Transfer</li>
-      <li>• Spectral Irradiance</li>
+    <hr>
+
+    <h4>👤 Professional Profiles</h4>
+    <ul style="list-style: none; padding-left: 0; font-size: 0.9em; line-height: 1.8;">
+      <li>🎓 <strong>PhD in Astrophysics</strong></li>
+      <li>🏫 <strong>Postdoc at Cornell</strong></li>
+      <li>🔗 <a href="https://orcid.org/0000-0003-2254-5936">ORCID Profile</a></li>
+      <li>🔗 <a href="https://www.researchgate.net/profile/Illeana-Gomez-Leal-2">ResearchGate</a></li>
+      <li>📄 <a href="cv_graphics.pdf">Download CV (PDF)</a></li>
+    </ul>
+
+    <hr>
+
+    <h4>🛠️ Production Stack</h4>
+    <ul style="font-size: 0.85em; color: #444; line-height: 1.6;">
+      <li><strong>Languages:</strong> Python, Fortran, Bash, SQL, IDL.</li>
+      <li><strong>Tools:</strong> xarray, NumPy, NetCDF4, HDF5.</li>
+      <li><strong>Env:</strong> Linux, SLURM/PBS, Git.</li>
+    </ul>
+
+    <hr>
+
+    <h4>🤝 Collaborations</h4>
+    <ul style="font-size: 0.8em; color: #555; padding-left: 15px;">
+      <li>NCAR (Boulder, CO)</li>
+      <li>Planetary Sunshade Institute</li>
+      <li>University of Nottingham</li>
     </ul>
   </div>
 
