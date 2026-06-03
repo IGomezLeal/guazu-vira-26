@@ -2,27 +2,42 @@
 layout: default
 ---
 
-<header>
-  <h1>High-Performance Computing & Climate Data Analytics</h1>
-  <p>Postdoctoral Researcher at Cornell University</p>
-  <!-- Aquí simulamos los enlaces que te gustarían en el margen -->
-  <a href="https://github.com/IGomezLeal" class="btn">GitHub</a>
-  <a href="https://linkedin.com/in/tu-perfil" class="btn">LinkedIn</a>
-</header>
+<!-- Título y descripción principal -->
+<h1>High-Performance Computing & Climate Data Analytics</h1>
+<p>Postdoctoral Researcher at Cornell University</p>
 
 <hr>
 
-<main>
-  <section>
-    <h2>Research Focus</h2>
-    <p>Simulaciones de geoingeniería solar y modelado atmosférico con <strong>WACCM</strong>.</p>
-  </section>
+<!-- Estructura de dos columnas: Contenido a la izquierda, Margen a la derecha -->
+<div style="display: flex; flex-wrap: wrap; gap: 40px; margin-top: 30px;">
 
-  <section>
-    <h2>Projects & Code</h2>
+  <!-- COLUMNA PRINCIPAL (Izquierda) -->
+  <div style="flex: 2; min-width: 300px;">
+    <h2>Research & Projects</h2>
+    <p>Especialista en modelado climático utilizando <strong>WACCM</strong> y <strong>CESM</strong>. Mi trabajo se centra en simulaciones de geoingeniería solar y presupuestos energéticos planetarios.</p>
+    
+    <h3>Technical Expertise</h3>
     <ul>
-      <li><strong>Climate Portfolio:</strong> Análisis de datos con xarray y numpy.</li>
-      <li><strong>Orbital Mechanics:</strong> Scripts para cálculo de sombras en L1.</li>
+      <li>Scientific Programming: Python (xarray, numpy), Fortran, Bash.</li>
+      <li>HPC Clusters: NCAR's Derecho & Casper.</li>
+      <li>Data: NetCDF processing and 3D visualization.</li>
     </ul>
-  </section>
-</main>
+  </div>
+
+  <!-- COLUMNA DE MARGEN (Derecha) -->
+  <div style="flex: 1; min-width: 200px; border-left: 1px solid #e5e5e5; padding-left: 30px;">
+    <h4>Contact & Links</h4>
+    <p style="font-size: 0.9em;">
+      <a href="https://github.com/IGomezLeal">GitHub Profile</a><br>
+      <a href="mailto:tu-email@cornell.edu">Cornell Email</a>
+    </p>
+
+    <h4>Focus Areas</h4>
+    <ul style="font-size: 0.9em; list-style-type: none; padding-left: 0;">
+      <li>• Solar Geoengineering</li>
+      <li>• Radiative Transfer</li>
+      <li>• Spectral Irradiance</li>
+    </ul>
+  </div>
+
+</div>
