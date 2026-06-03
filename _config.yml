@@ -1,0 +1,11 @@
+title: "HPC & Climate Analytics Portfolio"
+author:
+  name: "IGomezLeal"
+description: "Astrophysics · Numerical Modeling · Data Science"
+
+remote_theme: "jekyll/minima@0b7ca6b"
+
+plugins:
+  - jekyll-remote-theme
+  - jekyll-feed
+  - jekyll-seo-tag
