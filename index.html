@@ -45,4 +45,61 @@ title: "HPC & Climate Analytics Portfolio"
     <p>Technical summary focused on multi-terabyte data architecture, computational physics, and advanced climate engineering simulations within the <a href="https://www.cesm.ucar.edu/models"><strong>Community Earth System Model</strong></a> (CESM GCM) framework.</p>
 
     <h3>🔬 Project Overview</h3>
-    <p>This repository serves as a technical showcase of my research at <strong>Cornell University</strong>, focusing on large-scale
+    <p>This repository serves as a technical showcase of my research at <strong>Cornell University</strong>, focusing on large-scale data architecture and numerical modifications within the <strong>CESM GCM</strong> framework. The core objective is to simulate the spectral and bolometric impacts of space-based solar radiation management (SRM) strategies.</p>
+
+    <blockquote style="background: #f4f4f4; border-left: 5px solid #159957; padding: 15px;">
+      🖥️ <strong>HPC Infrastructure:</strong> All simulations and data pipelines were architected and executed on the <a href="https://www.cisl.ucar.edu/capabilities/derecho"><strong>NCAR Derecho</strong></a> High-Performance Computing (HPC) cluster, utilizing <a href="https://docs.unidata.ucar.edu/netcdf-c/current/"><strong>NetCDF4</strong></a> standards for high-throughput I/O of <strong>60 TB+</strong> datasets.
+    </blockquote>
+
+    <h3>📁 Data Standards: Why NetCDF?</h3>
+    <p>The projects in this repository utilize <a href="https://docs.unidata.ucar.edu/netcdf-c/current/"><strong>NetCDF (Network Common Data Form)</strong></a>, the industry standard for array-oriented scientific data:</p>
+    <ul>
+      <li><strong>Multidimensional:</strong> It allows for the storage of variables (temperature, pressure, solar irradiance) across 4D space-time coordinates ($x, y, z, t$).</li>
+      <li><strong>Self-Describing:</strong> Each file includes metadata (units, standard names, and coordinates), ensuring data integrity during high-throughput I/O.</li>
+      <li><strong>Performance:</strong> Optimized for large-scale parallel reads/writes on HPC clusters like <a href="https://www.cisl.ucar.edu/capabilities/derecho"><strong>NCAR Derecho</strong></a>, facilitating the management of the <strong>60 TB</strong> dataset used in these simulations.</li>
+    </ul>
+
+    <hr style="margin: 30px 0;">
+
+    <h3>🚀 GCM Numerical Implementations & Core Projects</h3>
+
+    <h4>1. Bolometric Dimming and Climatic Response produced by a space-based Sunshade</h4>
+    <ul>
+      <li><strong>Framework:</strong> CESM GCM with the Community Atmospheric Model (CAM).</li>
+      <li><strong>Implementation:</strong> Hardcoded parameterization of uniform, non-spectral solar constant reductions (bolometric dimming) for baseline climate sensitivity testing.</li>
+      <li><strong>Analytics Workflow:</strong> Statistical analysis comparing bolometric forcing mechanisms on global stratospheric and surface temperature anomalies, as well as Arctic sea ice preservation.</li>
+      <li><strong>Data Architecture:</strong> Optimized the low-level Fortran I/O pipeline to ingest NetCDF4 parameters directly into the GCM core, maximizing computational efficiency to perform global sensitivity experiments, and ensuring seamless memory mapping between physical disk storage and the model’s numerical kernels.</li>
+    </ul>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0 40px 0; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+      <iframe src="https://drive.google.com/file/d/1DHWkINHpbSsCgRyBI2aMFD9SVofIwm5_/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+    </div>
+
+    <h4>2. Filter Analysis, Spectral Dimming and Climatic Response produced by a space-based Sunshade</h4>
+    <ul>
+      <li><strong>Framework:</strong> CESM with the Whole Atmosphere Community Climate Model (WACCM).</li>
+      <li><strong>Implementation:</strong> Numerical integration of a space-based (Lagrangian point L1) spectral filter sunshade dimming effect into the GCM radiative transfer core.</li>
+      <li><strong>Analytics Workflow:</strong> Developed spectral analysis pipelines to evaluate different wavelength bands radiation attenuations on the near infrared, focusing on different climate responses. Computed multidimensional climate anomaly diagnostics under the Shared Socioeconomic Pathways (SSP) framework <strong>SSP2-4.5</strong> future scenario.</li>
+      <li><strong>Big Data Scale:</strong> High-throughput I/O pipelines for <strong>60 TB</strong> of climate dataset output. Developed routines to ingest and transform NetCDF4 structures into multidimensional arrays within the Fortran model core on the NCAR Derecho HPC cluster, with subsequent statistical analysis via parallelized Python (Xarray/NumPy) workflows.</li>
+    </ul>
+    
+    <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0 40px 0; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
+      <iframe src="https://drive.google.com/file/d/1sqeUj7riu_lpyHYPxMysEleNBYZb2ZbS/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
+    </div>
+
+    <h4>3. 4D Spatio-temporal Matrix Implementation and Simulations</h4>
+    <ul>
+      <li><strong>Framework:</strong> Modification of the solar forcing arrays inside the CESM GCM radiative transfer and the chemical modules.</li>
+      <li><strong>Implementation:</strong> Architected and embedded <strong>4D numerical matrices</strong> into the model's core to simulate the solar forcing dimming produced by a space-based sunshade located at the first Lagrangian point (L1). The dimming has a variability in time, latitude, longitude, and wavelength.</li>
+      <li><strong>Analytics Workflow:</strong> Implemented dynamic spatiotemporal distributions of dimming factors that scale the solar irradiance at the top of the atmosphere. Analysis of multi-variable climate responses to the localized radiative forcing over a long-term 30-year timeline [2035, 2065].</li>
+      <li><strong>Core Skills:</strong> Advanced Fortran modifications, NetCDF data creation and implementation on the global climate model, multidimensional coordinate mapping, and high-resolution 3D visualization.</li>
+    </ul>
+
+    <hr style="margin: 40px 0 30px 0;">
+
+    <p style="font-size: 0.85em; color: #555; line-height: 1.6;">
+      📝 <strong>Note:</strong> This repository showcases specific technical implementations in <strong>HPC and Climate Analytics</strong>. For inquiries regarding my broader research in <strong>Astrophysics and Climate Science</strong>, please contact me via my ResearchGate profile or the email provided in my CV.<br><br>
+      🔒 <strong>Privacy Note:</strong> Full source code and configuration files are hosted in private repositories. Specific code samples (e.g., Python data pipelines or Fortran core modifications) are available upon request.
+    </p>
+  </div>
+</div>
