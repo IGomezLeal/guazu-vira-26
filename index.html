@@ -1,18 +1,25 @@
 ---
 layout: default
-title: "HPC High-Performance Computing & Climate Data Analytics Portfolio"
+title: "Illeana Gomez-Leal | HPC & Climate Data Analytics Portfolio"
 ---
 
-<header style="padding: 20px 0; border-bottom: 2px solid #159957; margin-bottom: 30px;">
-  <h1 style="margin: 0;">Illeana Gomez-Leal</h1>
+<header style="padding: 25px 0; border-bottom: 2px solid #159957; margin-bottom: 30px; display: flex; align-items: center; flex-wrap: wrap; gap: 20px;">
+  <div style="flex: 0 0 100px;">
+    <img src="assets/images/profile.png" alt="Illeana Gomez-Leal" style="width: 100px; height: 100px; border-radius: 50%; object-fit: cover; border: 2px solid #159957; box-shadow: 0 2px 5px rgba(0,0,0,0.1);">
+  </div>
+  
+  <div style="flex: 1; min-width: 280px;">
+    <h1 style="margin: 0; font-size: 2.2em; color: #24292e;">Illeana Gomez-Leal</h1>
+    <p style="margin: 5px 0 0 0; font-size: 1.2em; color: #159957; font-weight: bold;">
+      High-Performance Computing & Climate Data Analytics Showcase
+    </p>
+  </div>
 </header>
 
 <div style="display: flex; flex-wrap: wrap; gap: 40px;">
 
-  <!-- COLUMNA IZQUIERDA: BIOGRAFÍA Y DATOS AL MARGEN -->
   <div style="flex: 1; min-width: 260px; border-right: 1px solid #e5e5e5; padding-right: 25px;">
     
-    <!-- Breve descripción introductoria -->
     <p style="font-size: 0.95em; color: #444; line-height: 1.5; margin-top: 0; margin-bottom: 25px;">
       <strong>Illeana Gomez-Leal</strong> is a data scientist and astrophysicist specializing in high-performance computing, large-scale data architectures, and advanced climate modeling.
     </p>
@@ -47,7 +54,6 @@ title: "HPC High-Performance Computing & Climate Data Analytics Portfolio"
     </ul>
   </div>
 
-  <!-- COLUMNA DERECHA: DESCRIPCIÓN DEL PROYECTO PRINCIPAL -->
   <div style="flex: 3; min-width: 350px;">
     
     <p>Technical summary focused on multi-terabyte data architecture, computational physics, and advanced climate engineering simulations within the <a href="https://www.cesm.ucar.edu/models"><strong>Community Earth System Model</strong></a> (CESM GCM) framework.</p>
@@ -88,26 +94,8 @@ title: "HPC High-Performance Computing & Climate Data Analytics Portfolio"
       <li><strong>Framework:</strong> CESM with the Whole Atmosphere Community Climate Model (WACCM).</li>
       <li><strong>Implementation:</strong> Numerical integration of a space-based (Lagrangian point L1) spectral filter sunshade dimming effect into the GCM radiative transfer core.</li>
       <li><strong>Analytics Workflow:</strong> Developed spectral analysis pipelines to evaluate different wavelength bands radiation attenuations on the near infrared, focusing on different climate responses. Computed multidimensional climate anomaly diagnostics under the Shared Socioeconomic Pathways (SSP) framework <strong>SSP2-4.5</strong> future scenario.</li>
-      <li><strong>Big Data Scale:</strong> High-throughput I/O pipelines for <strong>60 TB</strong> of climate dataset output. Developed routines to ingest and transform NetCDF4 structures into multidimensional arrays within the Fortran model core on the NCAR Derecho HPC cluster, with subsequent statistical analysis via parallelized Python (Xarray/NumPy) workflows.</li>
+      <li><strong>Big Data Scale:</strong> High-throughput I/O pipelines for 60 TB of climate dataset output. Developed routines to ingest and transform NetCDF4 structures into multidimensional arrays within the Fortran model core on the NCAR Derecho HPC cluster, with subsequent statistical analysis via parallelized Python (Xarray/NumPy) workflows.</li>
     </ul>
     
     <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden; margin: 20px 0 40px 0; border: 1px solid #ddd; border-radius: 6px; box-shadow: 0 2px 8px rgba(0,0,0,0.05);">
-      <iframe src="https://drive.google.com/file/d/1sqeUj7riu_lpyHYPxMysEleNBYZb2ZbS/preview" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none;" allowfullscreen></iframe>
-    </div>
-
-    <h4>3. 4D Spatio-temporal Matrix Implementation and Simulations</h4>
-    <ul>
-      <li><strong>Framework:</strong> Modification of the solar forcing arrays inside the CESM GCM radiative transfer and the chemical modules.</li>
-      <li><strong>Implementation:</strong> Architected and embedded <strong>4D numerical matrices</strong> into the model's core to simulate the solar forcing dimming produced by a space-based sunshade located at the first Lagrangian point (L1). The dimming has a variability in time, latitude, longitude, and wavelength.</li>
-      <li><strong>Analytics Workflow:</strong> Implemented dynamic spatiotemporal distributions of dimming factors that scale the solar irradiance at the top of the atmosphere. Analysis of multi-variable climate responses to the localized radiative forcing over a long-term 30-year timeline [2035, 2065].</li>
-      <li><strong>Core Skills:</strong> Advanced Fortran modifications, NetCDF data creation and implementation on the global climate model, multidimensional coordinate mapping, and high-resolution 3D visualization.</li>
-    </ul>
-
-    <hr style="margin: 40px 0 30px 0;">
-
-    <p style="font-size: 0.85em; color: #555; line-height: 1.6;">
-      📝 <strong>Note:</strong> This repository showcases specific technical implementations in <strong>HPC and Climate Analytics</strong>. For inquiries regarding my broader research in <strong>Astrophysics and Climate Science</strong>, please contact me via my ResearchGate profile or the email provided in my CV.<br><br>
-      🔒 <strong>Privacy Note:</strong> Full source code and configuration files are hosted in private repositories. Specific code samples (e.g., Python data pipelines or Fortran core modifications) are available upon request.
-    </p>
-  </div>
-</div>
+      <iframe src="https://drive.google.com/file/d/1sqeUj7riu_lpyHYPxMysEleNBYZb2ZbS/preview" style="position:
